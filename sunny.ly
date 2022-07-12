@@ -35,7 +35,7 @@ intro = {
   \bar "||"  \break
 }
 
-partA = {
+partAa = {
   <d e g b>8 <d e g b>4. r2 |
   e,4. e8 e4 f8 fis8 |
 
@@ -66,7 +66,38 @@ partA = {
 
 }
 
-partB = {
+partAb = {
+  <d' e g b>8 <d e g b>4. r2 |
+  e4. e8 e4 f8 fis8 |
+
+  <f, b d>2 <f' b e>8 d'8 b8 g8 |
+  g4. g8 g2 |
+
+  <e a>4 <e g>2 a8 b8( |
+  c,4. c8 c2 |
+
+  b4) <c, e a>4 r8 <ees g a d>4. |
+  fis4. fis8 b2 |
+
+  \break
+
+  <d e g b>8 <d e g b>4. r2 |
+  e,4. e8 e4 e'8 ees8 |
+
+  <a c f>2 <f' b e>8 d'8 b8 g8 |
+  d4. d8 g,2 |
+
+  <e a>4 <e g>4 g8 a8 g8 b8( |
+  c,4. c8 c2 |
+
+  b4) <a, c e>4 <a dis>4. a'8 |
+  fis4. fis8 b2 |
+
+  \break
+
+}
+
+partBa = {
   <d, g b>8 g8 a8 <d, g>8( <d g>4) a'8 g8 |
   e,4.             e8      e2             |
 
@@ -96,10 +127,42 @@ partB = {
   \bar "||" \break
 }
 
+partBb = {
+  <d, g b>4 a'8 <d, g>8( <d g>4.) a'8  |
+  e,4.             e8      e2             |
+
+  <c, f b>4 a'8 <b, f' g>8( <b f' g>4.) a'8 |
+  d4.           cis8 cis2           |
+
+  <c, e b'>4 a'8 <b, e g>8( <b e g>2)  |
+  c4.              c8         c2           |
+
+  <c ees g b>8 <c ees g a>4 <c ees g>8( <c ees g>2) |
+  f4.            f8 f2            |
+
+  \break
+
+  <c e fis b>8 <c e fis b>4. <c e fis b>8 <c e fis b>4. |
+  fis4.                 fis8 fis4                       a8 bes8 |
+
+  <a dis fis a>4 r4 g4 a'4  |
+  b4-\staccato     r4 r2            |
+
+  g8 <b, d e>4. r8 <b d e g>4. |
+  e,4.          e8 e2   |
+
+  <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>4-\staccato |
+  c'8 c8 c8 c8 c8 c8 c4-\staccato     |
+
+  \bar "||" \break
+}
+
 \parallelMusic rh,lh {
   \intro
-  \partA
-  \partB
+  \partAa
+  \partBa
+  \partAb
+  \partBb
 }
 
 \score {
