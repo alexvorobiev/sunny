@@ -6,29 +6,37 @@
 }
 
 intro = {
-  r <d e g b> r8 <d e g b>4. |
+  \chordmode { e1:m7 } |
+  r4 <d e g b> r8 <d e g b>4. |
   e4.         e8 e2          |
 
+  \chordmode { g1:7 } |
   r4 <d f g b> r8 <d f g b>4. |
   g4. g8 g2 |
 
+  \chordmode { c1:maj9 } |
   r4 <d e g b> r8 <d e g b>4. |
   c4. c8 c2 |
 
+  \chordmode { fis2:m7 b2:7 } |
   r4 <e a cis' e'> r8 <fis a cis' dis'>4. |
   fis4. fis8 b2 |
 
   \break
 
+  \chordmode { e1:m7 } |
   r4 <d e g b> r8 <d e g b>4. |
   e4. e8 e2 |
 
+  \chordmode { g1:7 } |
   r4 <d f g b> r8 <d f g b>4. |
   g4. g8 g2 |
 
+  \chordmode { c1:maj9 } |
   r4 <d e g b> r8 <d e g b>4. |
   c4. c8 c2 |
 
+  \chordmode { fis2:m7 b2:7 } |
   r4 <a, cis e> r8 <a, cis dis>4. |
   fis4. fis8 b2 |
 
@@ -189,18 +197,18 @@ partBb = {
   \bar "||" \break
 }
 
-\parallelMusic rh,lh {
+\parallelMusic ch,rh,lh {
   \intro
-  \partAa
-  \partBa
-  \partAb
-  \partBb
-  \key f \minor
-  \transpose e f \partAc
-  \transpose e f \partBb
-  \key fis \minor
-  \transpose e fis \partAb
-  \transpose e fis \partBa
+  % \partAa
+  % \partBa
+  % \partAb
+  % \partBb
+  % \key f \minor
+  % \transpose e f \partAc
+  % \transpose e f \partBb
+  % \key fis \minor
+  % \transpose e fis \partAb
+  % \transpose e fis \partBa
 }
 
 \score {
@@ -210,7 +218,10 @@ partBb = {
                                 % \set chordChanges = ##t
                                 % \chordmode { e1:m g1:m }
                                 % }
-
+    \new ChordNames {
+      \set chordChanges = ##t
+      \ch
+    }
     \new Staff {
       \clef "treble" \key e \minor
       \fixed c' {
