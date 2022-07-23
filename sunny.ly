@@ -84,7 +84,7 @@ partAb = {
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 e'8 ees'8 |
 
-  <a c f>2 <f' b e>8 d'8 b8 g8 |
+  <a, c f>2 <f b e'>8 d'8 b8 g8 |
   d'4. d'8 g2 |
 
   <e a>4 <e g>4 g8 a8 g8 b8( |
@@ -96,6 +96,38 @@ partAb = {
   \break
 
 }
+
+partAc = {
+  <d e g b>8 <d e g b>4. r2 |
+  e4. e8 e4 f8 fis8 |
+
+  <a, b, d f>2 <b d' g'>8 e'8 d'8 b8 |
+  g4. g8 g2 |
+
+  <e a>4. e8 g4 e8 b8( |
+  c4. c8 c2 |
+
+  b4) <c e a>4 r8 <b, dis g>4. |
+  fis4. fis8 b2 |
+
+  \break
+
+  <d e g b>8 <d e g b>4. r2 |
+  e4. e8 e4 e'8 ees'8 |
+
+  <a, c f>2  <b d' g'>8 e'8 d'8 b8 |
+  d'4. d'8 g2 |
+
+  <e a>4. e8 g4 e8 d'8( |
+  c4. c8 c2 |
+
+  d'8) <e a b>4. <dis a>2 |
+  fis4. fis8 b2 |
+
+  \break
+
+}
+
 
 partBa = {
   <d g b>8 g8 a8 <d g>8( <d g>4) a8 g8 |
@@ -151,7 +183,7 @@ partBb = {
   g8 <b, d e>4. r8 <b, d e g>4. |
   e4.          e8 e2   |
 
-  <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>8 <bes d e g>4-\staccato |
+  <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>4-\staccato |
   c'8 c'8 c'8 c'8 c'8 c'8 c'4-\staccato     |
 
   \bar "||" \break
@@ -164,11 +196,11 @@ partBb = {
   \partAb
   \partBb
   \key f \minor
-  \transpose e f \partAa
-  \transpose e f \partBa
+  \transpose e f \partAc
+  \transpose e f \partBb
   \key fis \minor
   \transpose e fis \partAb
-  \transpose e fis \partBb
+  \transpose e fis \partBa
 }
 
 \score {

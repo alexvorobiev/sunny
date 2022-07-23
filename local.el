@@ -15,3 +15,7 @@
     '(lambda (str) (string-match-p "lilypond" str))
     (split-string (getenv "XDG_DATA_DIRS") ":"))
    '("/emacs/site-lisp"))))
+
+(use-package lilypond-mode
+  :ensure nil
+  )
