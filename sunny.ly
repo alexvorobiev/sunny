@@ -1,5 +1,7 @@
 \version "2.22.2"
 
+#(ly:font-config-add-directory "fonts")
+
 \header {
   title = "Sunny"
   composer = "Bobby Hebb"
@@ -18,7 +20,7 @@ intro = {
   r4 <d e g b> r8 <d e g b>4. |
   c4. c8 c2 |
 
-  \chordmode { fis2:m7 b2:7 } |
+  \chordmode { fis2:m7 b2:9 } |
   r4 <e a cis' e'> r8 <fis a cis' dis'>4. |
   fis4. fis8 b2 |
 
@@ -36,7 +38,7 @@ intro = {
   r4 <d e g b> r8 <d e g b>4. |
   c4. c8 c2 |
 
-  \chordmode { fis2:m7 b2:7 } |
+  \chordmode { fis2:m7 b2:9 } |
   r4 <a, cis e> r8 <a, cis dis>4. |
   fis4. fis8 b2 |
 
@@ -44,29 +46,37 @@ intro = {
 }
 
 partAa = {
+  \chordmode { e1:m7 } |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 f8 fis8 |
 
+  \chordmode { g2:7 g2:13 } |
   <f, b, d>2 <f b e'>8 d'8 b8 a8 |
   g4. g8 g2 |
 
+  \chordmode { c1:m7 } |
   g4. e8 <b, g>4 e8 b8( |
   c4. c8 c2 |
 
+  \chordmode { fis2:m7.5- b2:7.5+.9+ } |
   b4) <c e a>4 r8 <ees g a d'>4. |
   fis4. fis8 b2 |
 
   \break
 
+  \chordmode { e1:m7 } |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 e'8 ees'8 |
 
+  \chordmode { d2:m7 g2:13} |
   <a c f>4. b8 <f b e'>8 d'8 b8 a8 |
   d'4. d'8 g2 |
 
+  \chordmode { c1:7 } |
   <b, e g>4 e4 <b, e g>4 a8 b8( |
   c4. c8 c2 |
 
+  \chordmode { fis2:m7.5- b2:7 } |
   b4) <a, c e>4 <a,  dis>4 g8 a8 |
   fis4. fis8 b4 r4 |
 
@@ -199,7 +209,7 @@ partBb = {
 
 \parallelMusic ch,rh,lh {
   \intro
-  % \partAa
+  \partAa
   % \partBa
   % \partAb
   % \partBb
@@ -218,7 +228,10 @@ partBb = {
                                 % \set chordChanges = ##t
                                 % \chordmode { e1:m g1:m }
                                 % }
-    \new ChordNames {
+    \new ChordNames \with {
+      \override ChordName.font-family = #'roman
+      % \override ChordName.font-name = "MuseJazzText"
+    } {
       \set chordChanges = ##t
       \ch
     }
