@@ -18,4 +18,4 @@
 
 (use-package lilypond-mode
   :ensure nil
-  )
+  :mode ("\\.ly\\'" . LilyPond-mode))

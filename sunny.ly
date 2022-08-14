@@ -1,6 +1,13 @@
 \version "2.22.2"
 
+% https://github.com/musescore/MuseScore/tree/master/fonts/musejazz
 #(ly:font-config-add-directory "fonts")
+% #(ly:font-config-display-fonts)
+
+\paper {
+                                % #(define fonts (set-global-fonts #:music "MuseJazz" #:brace "MuseJazz" #:roman "MuseJazz Text" #:sans "MuseJazz Text"  ))
+  #(define fonts (set-global-fonts #:roman "MuseJazz Text" #:sans "MuseJazz Text"  ))
+}
 
 \header {
   title = "Sunny"
@@ -54,7 +61,7 @@ partAa = {
   <f, b, d>2 <f b e'>8 d'8 b8 a8 |
   g4. g8 g2 |
 
-  \chordmode { c1:m7 } |
+  \chordmode { c1:7 } |
   g4. e8 <b, g>4 e8 b8( |
   c4. c8 c2 |
 
@@ -85,29 +92,37 @@ partAa = {
 }
 
 partAb = {
+  \chordmode { e1:m7 } |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 f8 fis8 |
 
+  \chordmode { g2:7 g2:13 } |
   <f, b, d>2 <f b e'>8 d'8 b8 g8 |
   g4. g8 g2 |
 
+  \chordmode { c4:6 c2. } |
   <e a>4 <e g>2 a8 b8( |
   c4. c8 c2 |
 
+  \chordmode { fis2:m7.5- b2:7.5+.9+ } |
   b4) <c e a>4 r8 <ees g a d'>4. |
   fis4. fis8 b2 |
 
   \break
 
+  \chordmode { e1:m7 } |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 e'8 ees'8 |
 
+  \chordmode { d2:m7 g2:13} |
   <a, c f>2 <f b e'>8 d'8 b8 g8 |
   d'4. d'8 g2 |
 
+  \chordmode { c4:6 c2. } |
   <e a>4 <e g>4 g8 a8 g8 b8( |
   c4. c8 c2 |
 
+  \chordmode { fis2:m7.5- b2:7 } |
   b4) <a, c e>4 <a, dis>4. a8 |
   fis4. fis8 b2 |
 
@@ -116,29 +131,37 @@ partAb = {
 }
 
 partAc = {
+  \chordmode { e1:m7 } |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 f8 fis8 |
 
+  \chordmode { g2:9 g2} |
   <a, b, d f>2 <b d' g'>8 e'8 d'8 b8 |
   g4. g8 g2 |
 
+  \chordmode { g2:9 g2} |
   <e a>4. e8 g4 e8 b8( |
   c4. c8 c2 |
 
+  \chordmode { g2:9 g2} |
   b4) <c e a>4 r8 <b, dis g>4. |
   fis4. fis8 b2 |
 
   \break
 
+  \chordmode { g2:9 g2} |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 e'8 ees'8 |
 
+  \chordmode { g2:9 g2} |
   <a, c f>2  <b d' g'>8 e'8 d'8 b8 |
   d'4. d'8 g2 |
 
+  \chordmode { g2:9 g2} |
   <e a>4. e8 g4 e8 d'8( |
   c4. c8 c2 |
 
+  \chordmode { g2:9 g2} |
   d'8) <e a b>4. <dis a>2 |
   fis4. fis8 b2 |
 
@@ -148,29 +171,37 @@ partAc = {
 
 
 partBa = {
+  \chordmode { e1:m7 } |
   <d g b>8 g8 a8 <d g>8( <d g>4) a8 g8 |
   e4.             e8      e2             |
 
+  \chordmode { d2:m13 g2:7 } |
   <c f b>8 g8 a8 <b, f g>8( <b, f g>2)   |
   d4.           g8 g4               d8 des8 |
 
+  \chordmode { c1:maj7 } |
   <c e b>8 g8 a8 <c e g>8( <c e g>4) a |
   c4.              c8         c2           |
 
+  \chordmode { f1:7 } |
   <c ees g b>4 a4 <a, c ees g>2 |
   f4.            f8 f2            |
 
   \break
 
+  \chordmode { fis1:m11 } |
   <c e fis b>8 <c e fis b>4. <c e fis b>8 <c e fis b>4. |
   fis4.                 fis8 fis4                       a8 bes8 |
 
+  \chordmode { b2:7 f2:9} |
   <a, dis fis a>4 r4 <c ees g>4 a4  |
   b4-\staccato     r4 f2            |
 
+  \chordmode { e1:m7 } |
   g8 <b, d e>4. <g, c>2 |
   e4.          e8 e2   |
 
+  \chordmode { e1:m7 } |
   <g, cis>2   <g, c>2 |
   e4.     e8 e2     |
 
@@ -178,29 +209,37 @@ partBa = {
 }
 
 partBb = {
+  \chordmode { e1:m7 } |
   <d g b>4 a8 <d g>8( <d g>4.) a8  |
   e4.             e8      e2             |
 
+  \chordmode { d4.:m13 cis2:7.5- cis8:7.5- } |
   <c f b>4 a8 <b, f g>8( <b, f g>4.) a8 |
   d4.           cis8 cis2           |
 
+  \chordmode { c1:maj7 } |
   <c e b>4 a8 <b, e g>8( <b, e g>2)  |
   c4.              c8         c2           |
 
+  \chordmode { f4.:9sus4 f2:9 f8:9 } |
   <c ees g b>8 <c ees g a>4 <c ees g>8( <c ees g>2) |
   f4.            f8 f2            |
 
   \break
 
+  \chordmode { e1:m7 } |
   <c e fis b>8 <c e fis b>4. <c e fis b>8 <c e fis b>4. |
   fis4.                 fis8 fis4                       a8 bes8 |
 
+  \chordmode { e1:m7 } |
   <a, dis fis a>4 r4 g4 a4  |
   b4-\staccato     r4 r2            |
 
+  \chordmode { e1:m7 } |
   g8 <b, d e>4. r8 <b, d e g>4. |
   e4.          e8 e2   |
 
+  \chordmode { e1:m7 } |
   <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>8 <bes, d e g>4-\staccato |
   c'8 c'8 c'8 c'8 c'8 c'8 c'4-\staccato     |
 
@@ -210,15 +249,15 @@ partBb = {
 \parallelMusic ch,rh,lh {
   \intro
   \partAa
-  % \partBa
-  % \partAb
-  % \partBb
-  % \key f \minor
-  % \transpose e f \partAc
-  % \transpose e f \partBb
-  % \key fis \minor
-  % \transpose e fis \partAb
-  % \transpose e fis \partBa
+  \partBa
+  \partAb
+  \partBb
+  \key f \minor
+  \transpose e f \partAc
+  \transpose e f \partBb
+  \key fis \minor
+  \transpose e fis \partAb
+  \transpose e fis \partBa
 }
 
 \score {
@@ -229,8 +268,10 @@ partBb = {
                                 % \chordmode { e1:m g1:m }
                                 % }
     \new ChordNames \with {
-      \override ChordName.font-family = #'roman
-      % \override ChordName.font-name = "MuseJazzText"
+      % \override ChordName.font-family = #'serif
+                                % \override ChordName.font-name = "MuseJazz Text"
+      \override ChordName.font-name = "Source Serif Pro"
+      % \override ChordName #'font-name = #'"MuseJazz Text"
     } {
       \set chordChanges = ##t
       \ch
