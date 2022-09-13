@@ -139,29 +139,29 @@ partAc = {
   <a, b, d f>2 <b d' g'>8 e'8 d'8 b8 |
   g4. g8 g2 |
 
-  \chordmode { g2:9 g2} |
+  \chordmode { c2:6 c2:7} |
   <e a>4. e8 g4 e8 b8( |
   c4. c8 c2 |
 
-  \chordmode { g2:9 g2} |
+  \chordmode { fis2:7 b2:7.5+} |
   b4) <c e a>4 r8 <b, dis g>4. |
   fis4. fis8 b2 |
 
   \break
 
-  \chordmode { g2:9 g2} |
+  \chordmode { e1:m7} |
   <d e g b>8 <d e g b>4. r2 |
   e4. e8 e4 e'8 ees'8 |
 
-  \chordmode { g2:9 g2} |
+  \chordmode { d2:m7 g2} |
   <a, c f>2  <b d' g'>8 e'8 d'8 b8 |
   d'4. d'8 g2 |
 
-  \chordmode { g2:9 g2} |
+  \chordmode { c2:6 c2} |
   <e a>4. e8 g4 e8 d'8( |
   c4. c8 c2 |
 
-  \chordmode { g2:9 g2} |
+  \chordmode { fis2:m11 b2:7} |
   d'8) <e a b>4. <dis a>2 |
   fis4. fis8 b2 |
 
