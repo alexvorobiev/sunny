@@ -47,7 +47,7 @@
       #:super strA
       #:fontsize 1.5 "["
       #:fontsize -4
-      #:raise 1.2
+      #:raise 1.8
       #:column (strB strC)
       #:fontsize 1.5 "]"
     )
@@ -142,4 +142,3 @@ JazzChords = #(append (sequential-music-to-chord-exceptions JazzChordsList #t) i
     \override ChordName.font-name = #"lilyjazz-chord"  % use the custom font for displaying the chords
   }
 }
-
