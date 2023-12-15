@@ -1,13 +1,16 @@
-\version "2.22.2"
+\version "2.25.9"
+\include "jazzchords.ily"
+\include "lilyjazz.ily"
+\include "jazzextras.ily"
 
-% https://github.com/musescore/MuseScore/tree/master/fonts/musejazz
-#(ly:font-config-add-directory "fonts")
-% #(ly:font-config-display-fonts)
+% \paper {
+%   % \include "lilyjazz.ily"
+%   property-defaults.fonts.music  = "lilyjazz"
+%   property-defaults.fonts.sans   = "lilyjazz-chord"
+%   property-defaults.fonts.chords = "lilyjazz-chord"
+%   property-defaults.fonts.roman  = "lilyjazz-text"
+% }
 
-\paper {
-                                % #(define fonts (set-global-fonts #:music "MuseJazz" #:brace "MuseJazz" #:roman "MuseJazz Text" #:sans "MuseJazz Text"  ))
-  #(define fonts (set-global-fonts #:roman "MuseJazz Text" #:sans "MuseJazz Text"  ))
-}
 
 \header {
   title = "Sunny"
@@ -267,12 +270,7 @@ partBb = {
                                 % \set chordChanges = ##t
                                 % \chordmode { e1:m g1:m }
                                 % }
-    \new ChordNames \with {
-      % \override ChordName.font-family = #'serif
-                                % \override ChordName.font-name = "MuseJazz Text"
-      \override ChordName.font-name = "Source Serif Pro"
-      % \override ChordName #'font-name = #'"MuseJazz Text"
-    } {
+    \new ChordNames {
       \set chordChanges = ##t
       \ch
     }

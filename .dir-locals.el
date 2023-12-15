@@ -9,5 +9,5 @@
                          '("/emacs/site-lisp")))))
 
                    (use-package lilypond-mode
-                     :load-path (lambda () (list (lilypond-load-path)))
+                     ;; :load-path (lambda () (list (lilypond-load-path)))
                      :mode ("\\.ly\\'" . LilyPond-mode)))))))
