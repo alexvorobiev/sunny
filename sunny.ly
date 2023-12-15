@@ -1,16 +1,8 @@
 \version "2.25.9"
+
 \include "jazzchords.ily"
 \include "lilyjazz.ily"
 \include "jazzextras.ily"
-
-% \paper {
-%   % \include "lilyjazz.ily"
-%   property-defaults.fonts.music  = "lilyjazz"
-%   property-defaults.fonts.sans   = "lilyjazz-chord"
-%   property-defaults.fonts.chords = "lilyjazz-chord"
-%   property-defaults.fonts.roman  = "lilyjazz-text"
-% }
-
 
 \header {
   title = "Sunny"
@@ -265,11 +257,7 @@ partBb = {
 
 \score {
   \new PianoStaff <<
-                                % \chords { e1:m }
-                                % \new ChordNames {
-                                % \set chordChanges = ##t
-                                % \chordmode { e1:m g1:m }
-                                % }
+
     \new ChordNames {
       \set chordChanges = ##t
       \ch
